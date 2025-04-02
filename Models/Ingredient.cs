@@ -6,6 +6,6 @@
         public string Name { get; set; } = null!;
 
         //Connecting the class to the dishIngredient model
-        public List<DishIngredient>? DishIngredients { get; set; };
+        public List<DishIngredient>? DishIngredients { get; set; }
     }
 }

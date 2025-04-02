@@ -8,7 +8,6 @@
         public double Price { get; set; }
 
         //Connecting the class to the dish ingredient monde
-
-        public List<DishIngredient> ?dishIngredients { get; set; }
+        public List<DishIngredient> ? DishIngredients { get; set; }
     }
 }

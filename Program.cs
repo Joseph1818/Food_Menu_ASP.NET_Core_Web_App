@@ -1,7 +1,12 @@
+using Microsoft.EntityFrameworkCore;
+using Menu.Repo;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+// Add conectionString into the database
+builder.Services.AddDbContext<MenuContext>(Options => Options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectionString")));
 
 var app = builder.Build();
 
